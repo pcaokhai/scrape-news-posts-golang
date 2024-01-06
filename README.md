@@ -17,6 +17,7 @@
 go mod download
 go run cmd/main.go
 ```
+3. Need to wait a few minutes for the posts to be scrape, then access http://localhost:8000
 
 ### Test
 1. Go to http://localhost:8000 for main website
