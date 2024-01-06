@@ -17,7 +17,7 @@
 go mod download
 go run cmd/main.go
 ```
-3. Need to wait a few minutes for the posts to be scrape, then access http://localhost:8000
+4. Need to wait a few minutes for the posts to be scraped, then access http://localhost:8000
 
 ### Test
 1. Go to http://localhost:8000 for main website
@@ -26,10 +26,11 @@ go run cmd/main.go
     - POST  Http://localhost:8000/api/v1/post/:postId update a post 
     - DELETE    Http://localhost:8000/api/v1/post/ delete a post
 
-### Techoology used:
+### Technology used:
 1. golang
 2. postgres
 3. redis
-4. clean architecture
-5. [obelisk](https://github.com/go-shiori/obelisk)
-6. [colly](https://github.com/gocolly/colly)
+4. [echo framework](https://echo.labstack.com/)
+5. clean architecture
+6. [obelisk](https://github.com/go-shiori/obelisk)
+7. [colly](https://github.com/gocolly/colly)
