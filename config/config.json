@@ -1,0 +1,28 @@
+{
+  "Port": "8000",
+  "Sync_time": 3600,
+  "Num_processes": "5",
+  "Url": "https://www.secretchina.com",
+  "JwtSecretKey": "secret",
+  "CookieName": "jwt-token",
+  "postgres": {
+    "Host": "localhost",
+    "Port": "5432",
+    "User": "postgres",
+    "Password": "postgres",
+    "Dbname": "scraper",
+    "Sslmod": "disable"
+  },
+  "redis": {
+    "Host": "localhost",
+    "Port": "6379",
+    "Password": "redis",
+    "db": "0"
+  },
+  "cookie": {
+    "Name": "jwt-token",
+    "MaxAge": 86400,
+    "Secure": false,
+    "HttpOnly": true
+  }
+}

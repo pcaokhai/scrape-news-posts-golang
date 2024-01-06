@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+  </head>
+  <body>
+    <h1>Home Page</h1>
+    <hr />
+    <ul>
+      <li><a href="/register">Register</a></li>
+      <li><a href="/login">Login</a></li>
+    </ul>
+    <hr />
+    <h5>
+      Articles from <a href="https://www.secretchina.com/">Secret China </a>:
+    </h5>
+    <ul>
+      {{range .}}
+      <li><a href={{.Url}}>ID: {{.ArticleId}} - Title: {{.Title}}</a></li>
+      {{end}}
+    </ul>
+
+    <p>Number of articles: {{ . | len -}}</p>
+  </body>
+</html>
